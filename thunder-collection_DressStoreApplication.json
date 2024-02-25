@@ -1,0 +1,142 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "DressStoreApplication",
+    "dateExported": "2024-02-25T05:51:30.931Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "601946b3-0210-4a5e-8e75-b2becb8be320",
+            "colId": "b4bc0e2d-a5cc-4085-8efb-f4a13cf9c098",
+            "containerId": "",
+            "name": "api/products add new product",
+            "url": "http://localhost:7070/api/products",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-18T09:47:49.269Z",
+            "modified": "2024-02-18T21:31:24.971Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Tshirt\",\n  \"description\": \"Denim\",\n  \"price\": 2100,\n  \"published\": true,\n  \"category\": \"Men\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a924bc30-a5a4-4b76-98aa-fa3eeeb41846",
+            "colId": "b4bc0e2d-a5cc-4085-8efb-f4a13cf9c098",
+            "containerId": "",
+            "name": "api/products get all products",
+            "url": "http://localhost:7070/api/products",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-18T17:41:21.874Z",
+            "modified": "2024-02-18T17:42:45.807Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b422bc3e-1cac-4a9b-833a-3a94730a35f1",
+            "colId": "b4bc0e2d-a5cc-4085-8efb-f4a13cf9c098",
+            "containerId": "",
+            "name": "api/products remove all products",
+            "url": "http://localhost:7070/api/products/",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-02-18T17:41:48.124Z",
+            "modified": "2024-02-18T21:28:54.136Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0aec9de7-e325-4e77-bcbe-1dbdf66a1020",
+            "colId": "b4bc0e2d-a5cc-4085-8efb-f4a13cf9c098",
+            "containerId": "",
+            "name": "/api/products/:id get product by id",
+            "url": "http://localhost:7070/api/products/65d277229057d8aa08c3241b",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-18T18:19:15.651Z",
+            "modified": "2024-02-18T21:33:11.689Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7f5afd63-63dc-40f5-9426-3e1353bb3361",
+            "colId": "b4bc0e2d-a5cc-4085-8efb-f4a13cf9c098",
+            "containerId": "",
+            "name": "/api/products/:id update product by id",
+            "url": "http://localhost:7070/api/products/65d2772c9057d8aa08c3241d",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-18T18:19:33.380Z",
+            "modified": "2024-02-18T22:27:31.724Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"name\": \"Cargo Jeans\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e5283aa3-8ceb-40f9-86e3-a7bb849e1151",
+            "colId": "b4bc0e2d-a5cc-4085-8efb-f4a13cf9c098",
+            "containerId": "",
+            "name": "/api/products/:id delete product by id",
+            "url": "http://localhost:7070/api/products/65d277229057d8aa08c3241b",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-02-18T18:19:47.643Z",
+            "modified": "2024-02-18T21:35:48.069Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "57c0d05e-9d49-42d5-8674-78a572dbca53",
+            "colId": "b4bc0e2d-a5cc-4085-8efb-f4a13cf9c098",
+            "containerId": "",
+            "name": "add category",
+            "url": "http://localhost:7070/api/category",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-18T19:18:50.640Z",
+            "modified": "2024-02-18T19:20:17.095Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Teens\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "966f7c1c-5026-4e54-b2e8-86c4307469aa",
+            "colId": "b4bc0e2d-a5cc-4085-8efb-f4a13cf9c098",
+            "containerId": "",
+            "name": "api/products?name=kw find all products with kw",
+            "url": "http://localhost:7070/api/products/search/value?name=jean",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-18T19:53:14.911Z",
+            "modified": "2024-02-18T21:27:25.882Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "jean",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
